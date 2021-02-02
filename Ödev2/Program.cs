@@ -28,9 +28,29 @@ namespace Ödev2
 
             for (int i = 0; i < urunlar.Length; i++)
             {
-                Console.WriteLine(urunlar[i]);
+                Console.WriteLine(urunlar[i].Model);
+                
+                Console.WriteLine(urunlar[i].Fiyat); 
+                
+                Console.WriteLine(urunlar[i].Buton);
             }
-
+            Console.WriteLine(".....................................................");
+            foreach (var urun in urunlar)
+            {
+                Console.WriteLine(urun.Model);
+                Console.WriteLine(urun.Fiyat);
+                Console.WriteLine(urun.Buton);
+            }
+            Console.WriteLine("...............................................................");
+            int k = 0;
+            while (k<=urunlar.Length)
+            {
+                Console.WriteLine(urunlar[k].Model);
+                Console.WriteLine(urunlar[k].Fiyat);
+                Console.WriteLine(urunlar[k].Buton);
+                k += 1;
+           
+            }
 
         }
     }
